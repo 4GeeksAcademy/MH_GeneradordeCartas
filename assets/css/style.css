@@ -1,21 +1,22 @@
+/* assets/css/style.css */
 * {
-  box-sizing: border-box;
-}
-
-body {
+	box-sizing: border-box;
+  }
+  
+  body {
 	height: 100vh;
 	margin: 0;
 	background-color: rgb(18, 129, 37);
-}
-
-main {
+  }
+  
+  main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 50%;
-}
-
-article.card {
+  }
+  
+  article.card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -24,70 +25,70 @@ article.card {
 	width: 200px;
 	background-color: rgb(255, 255, 255);
 	border-radius: 5%;
-}
-
-header {
+  }
+  
+  header {
 	width: 100%;
 	text-align: left;
 	padding-left: 10px;
 	font-size: 70px;
-}
-
-section.number {
+  }
+  
+  section.number {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	height: 200px;
 	width: 200px;
-  font-size: 90px;
-  font-weight: bold;
-}
-
-footer {
+	font-size: 90px;
+	font-weight: bold;
+  }
+  
+  footer {
 	width: 100%;
 	text-align: left;
 	padding-left: 10px;
 	font-size: 70px;
-}
-
-.heart::after {
-  content: "♥";
-  color: red;
-}
-
-.spade::after {
-  content: "♠";
-  color: black;
-}
-
-.club::after {
-  content: "♣";
-  color: black;
-}
-
-.diamond::after {
-  content: "♦";
-  color: red;
-}
-
-.inverse {
-  transform: rotate(180deg);
-}
-
-.red {
-  color: red;
-}
-
-.black {
-  color: black;
-}
-
-section.button_container {
+  }
+  
+  .heart::after {
+	content: "♥";
+	color: red;
+  }
+  
+  .spade::after {
+	content: "♠";
+	color: black;
+  }
+  
+  .club::after {
+	content: "♣";
+	color: black;
+  }
+  
+  .diamond::after {
+	content: "♦";
+	color: red;
+  }
+  
+  .inverse {
+	transform: rotate(180deg);
+  }
+  
+  .red {
+	color: red;
+  }
+  
+  .black {
+	color: black;
+  }
+  
+  section.button_container {
 	display: flex;
 	justify-content: center;
-}
-
-.button_new_card {
+  }
+  
+  .button_new_card {
 	width: 200px;
 	height: 50px;
 	font-size: 28px;
@@ -97,10 +98,11 @@ section.button_container {
 	cursor: pointer;
 	border-radius: 4%;
 	transition: 0.5s;
-}
-
-.button_new_card:hover {
+  }
+  
+  .button_new_card:hover {
 	background-color: rgb(130, 188, 240);
 	color: white;
 	transform: scale(1.1);
-}
+  }
+  
