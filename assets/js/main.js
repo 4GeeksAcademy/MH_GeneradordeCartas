@@ -8,7 +8,6 @@ let card_head = document.querySelector('#header');
 let card_footer = document.querySelector('#footer'); 
 let card_number = document.querySelector('#number');
 let boton_cargar_carta = document.querySelector('.button_new_card');
-
 boton_cargar_carta.addEventListener('click', () => {
   generarCartaAleatoria();
 });
@@ -22,6 +21,8 @@ function generarCartaAleatoria() {
   card_head.className = pinta;
   card_footer.className = pinta + ' inverse';
   let temporizador = generaTemporizador();
+  
+
 }
 
 function generarPintaAleatoria() {
