@@ -21,6 +21,7 @@ function generarCartaAleatoria() {
   card_number.className = 'number'; // Añadir clase de color al número según la pinta
   card_head.className = pinta;
   card_footer.className = pinta + ' inverse';
+  let temporizador = generaTemporizador();
 }
 
 function generarPintaAleatoria() {
@@ -57,4 +58,10 @@ function generarNumeroAleatorio(pinta) {
     default:
       return numero; // Para otros números, simplemente devuelve el número
   }
+}
+//console.log(setInterval(generarCartaAleatoria, 10000));
+
+function generaTemporizador(){
+  setInterval(generarCartaAleatoria, 10000);
+  
 }
