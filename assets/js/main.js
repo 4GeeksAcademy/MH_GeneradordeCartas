@@ -32,10 +32,23 @@ function generarCartaAleatoria() {
   card_number.className = 'number ' + color; // Añadir clase de color al número según la pinta
   card_head.className = pinta;
   card_footer.className = pinta + ' inverse';
-  let temporizador = generaTemporizador();
-  
 
+  let contador = 10;
+  let elementoContador = document.querySelector('#contador');
+  elementoContador.textContent = contador; 
+
+  function actualizaContador() {
+    contador--;
+    elementoContador.textContent = contador;
+    if (contador === 0) {
+      contador = 10;
+      generarCartaAleatoria();
+    }
+  }
+
+  setInterval(actualizaContador, 1000);
 }
+
 
 function generarPintaAleatoria() {
   let num_aleatorio_pinta = Math.floor(Math.random() * 4) + 1; // Genera un número entre 1 y 4
@@ -73,9 +86,3 @@ function generarNumeroAleatorio(pinta) {
   }
 }
 //console.log(setInterval(generarCartaAleatoria, 10000));
-
-function generaTemporizador(){
-  setInterval(generarCartaAleatoria, 10000);
-  
-  
-}

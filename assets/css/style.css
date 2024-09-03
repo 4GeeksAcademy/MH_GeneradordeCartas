@@ -106,3 +106,7 @@
 	transform: scale(1.1);
   }
   
+  #contador {
+	text-align: center;
+	color: white;
+  }
