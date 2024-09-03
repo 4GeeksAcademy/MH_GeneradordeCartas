@@ -16,8 +16,20 @@ function generarCartaAleatoria() {
   card_head.className = '';
   card_footer.className = '';
   let pinta = generarPintaAleatoria();
+  let color ="";
+
+  switch(pinta){
+    case "spade":
+    case "club":
+      color = "black";
+    break;
+    case "heart":
+    case "diamond":
+       color = "red";
+    break;
+  }
   card_number.textContent = generarNumeroAleatorio(pinta); // Añadir el número
-  card_number.className = 'number'; // Añadir clase de color al número según la pinta
+  card_number.className = 'number ' + color; // Añadir clase de color al número según la pinta
   card_head.className = pinta;
   card_footer.className = pinta + ' inverse';
   let temporizador = generaTemporizador();
@@ -64,5 +76,6 @@ function generarNumeroAleatorio(pinta) {
 
 function generaTemporizador(){
   setInterval(generarCartaAleatoria, 10000);
+  
   
 }
